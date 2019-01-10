@@ -21,5 +21,5 @@ rkhunter_update:
 
 rkhunter_run:
   cmd.run:
-    - name: /usr/bin/rkhunter --check --display-logfile --noappend-log --nomow --novl --quiet --sk --report-warnings
+    - name: /usr/bin/rkhunter --check --display-logfile --noappend-log --nomow --novl --quiet --sk --report-warnings-only
     - use_vt: True
