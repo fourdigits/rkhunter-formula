@@ -1,0 +1,7 @@
+{% set rkhunter = salt['grains.filter_by']({
+    'Debian': {
+        'package': 'rkhunter',
+        'conf_file': '/etc/rkhunter.conf',
+        'email': 'support@fourdigits.nl',
+    },
+}, merge=salt['pillar.get']('rkhunter:lookup')) %}
